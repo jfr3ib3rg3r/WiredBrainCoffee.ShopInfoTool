@@ -30,6 +30,7 @@ namespace WiredBrainCoffee.ShopInfoTool
               var coffeShop = foundCoffeeShops.Single();
               Console.WriteLine($"> Location: {coffeShop.Location}");
               Console.WriteLine($"> Beans in stock: {coffeShop.BeansInStockInKg} kg");
+              Console.WriteLine($"> Paper cups in stock: {coffeShop.PaperCupsInStock}");
           }
           else
           {

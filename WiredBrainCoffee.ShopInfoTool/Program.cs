@@ -26,8 +26,8 @@ namespace WiredBrainCoffee.ShopInfoTool
 
                 ICommandHandler commandHandler = 
                 string.Equals("help", line, StringComparison.OrdinalIgnoreCase)
-                ? new HelpCommandHandler(coffeeShops)
-                : new CoffeeShopCommandHandler(coffeeShops, line);
+                    ? new HelpCommandHandler(coffeeShops)
+                    : new CoffeeShopCommandHandler(coffeeShops, line);
                 commandHandler.HandleCommand();
             }
         }
